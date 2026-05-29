@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KHANZA COFFEE - Kopi Arabica Gayo 100% Dengan Cita Rasa Premium. Coffee shop rumahan premium di Medan, Sumatera Utara." />
+  <meta name="keywords" content="kopi gayo, arabica gayo, coffee shop medan, kopi premium, khanza coffee" />
+  <meta name="author" content="Khanza Coffee" />
+  <meta property="og:title" content="KHANZA COFFEE – Kopi Arabica Gayo 100% Premium" />
+  <meta property="og:description" content="Nikmati cita rasa kopi Arabica Gayo 100% asli dalam suasana modern dan hangat." />
+  <title>KHANZA COFFEE – Kopi Arabica Gayo 100% Premium</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-k">K</span>
+        <div class="loader-bean">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="30" cy="30" rx="22" ry="28" fill="#C9A96E" opacity="0.9"/>
+            <path d="M30 8 Q38 20 30 30 Q22 40 30 52" stroke="#3B1F0A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="loader-rest">HANZA COFFEE</span>
+      </div>
+      <p class="loader-tagline">Arabica Gayo 100%</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-k">K</span>HANZA <span class="logo-accent">COFFEE</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#location" class="nav-link">Location</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+          <i class="fas fa-music" id="musicIcon"></i>
+        </button>
+        <a href="#menu" class="btn-nav">Order Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <!-- Cinematic Coffee Background -->
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-steam" id="heroSteam">
+        <div class="steam s1"></div>
+        <div class="steam s2"></div>
+        <div class="steam s3"></div>
+        <div class="steam s4"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span> Arabica Gayo 100% Asli
+      </div>
+      <h1 class="hero-title reveal-up">
+        <span class="title-line">Rasakan</span>
+        <span class="title-line italic">Kekayaan Rasa</span>
+        <span class="title-line">Dataran Gayo</span>
+      </h1>
+      <p class="hero-sub reveal-up">Kopi Arabica Gayo 100% Dengan Cita Rasa Premium</p>
+      <div class="hero-btns reveal-up">
+        <a href="#menu" class="btn-primary">
+          <span>Explore Menu</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="https://wa.me/6282280864395" target="_blank" class="btn-outline">
+          <span>Order Now</span>
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span><span>%</span>
+          <span class="stat-label">Arabica Gayo</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span>.0</span>
+          <span class="stat-label">Rating Google</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="500">0</span><span>+</span>
+          <span class="stat-label">Pelanggan Puas</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <div class="about-img-main">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Kopi Arabica Gayo Premium" loading="lazy" />
+            </div>
+            <div class="about-img-accent">
+              <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=300&q=80" alt="Biji Kopi Gayo" loading="lazy" />
+            </div>
+            <div class="about-badge-float">
+              <span class="badge-year">100%</span>
+              <span class="badge-text">Arabica<br/>Gayo</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <span class="section-eyebrow">Tentang Kami</span>
+          <h2 class="section-title">Kopi Rumahan<br/><em>Dengan Jiwa Premium</em></h2>
+          <p class="about-desc">KHANZA COFFEE lahir dari kecintaan mendalam terhadap kopi Arabica Gayo—permata dari dataran tinggi Aceh yang terkenal di seluruh dunia. Kami hadir sebagai coffee shop rumahan premium yang menghadirkan pengalaman kopi autentik tanpa kompromi.</p>
+          <p class="about-desc">Setiap cangkir yang kami sajikan adalah perjalanan rasa: dari kebun kopi di ketinggian 1.200–1.700 mdpl, melalui tangan-tangan terampil, hingga menemani hari-hari terbaikmu.</p>
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon"><i class="fas fa-leaf"></i></div>
+              <div class="pillar-text">
+                <h4>100% Arabica Gayo</h4>
+                <p>Biji kopi pilihan langsung dari petani Gayo</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon"><i class="fas fa-fire"></i></div>
+              <div class="pillar-text">
+                <h4>Roast Sempurna</h4>
+                <p>Profil roasting yang dikurasi untuk rasa optimal</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon"><i class="fas fa-heart"></i></div>
+              <div class="pillar-text">
+                <h4>Disajikan dengan Cinta</h4>
+                <p>Setiap cangkir adalah dedikasi penuh hati</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Stats -->
+      <div class="about-stats-row">
+        <div class="astat-card reveal-up" data-delay="0">
+          <span class="astat-num counter" data-count="100">0</span><span class="astat-sym">%</span>
+          <p>Arabica Gayo Murni</p>
+        </div>
+        <div class="astat-card reveal-up" data-delay="100">
+          <span class="astat-num counter" data-count="5">0</span><span class="astat-sym">⭐</span>
+          <p>Rating Google Maps</p>
+        </div>
+        <div class="astat-card reveal-up" data-delay="200">
+          <span class="astat-num counter" data-count="7">0</span><span class="astat-sym">+</span>
+          <p>Varian Menu Kopi</p>
+        </div>
+        <div class="astat-card reveal-up" data-delay="300">
+          <span class="astat-num counter" data-count="500">0</span><span class="astat-sym">+</span>
+          <p>Pelanggan Setia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu section-padding" id="menu">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Pilihan Kami</span>
+        <h2 class="section-title">Menu <em>Premium</em></h2>
+        <p class="section-sub">Setiap sajian dibuat dengan biji kopi Arabica Gayo pilihan dan teknik barista profesional</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="hot">Hot Coffee</button>
+        <button class="filter-btn" data-filter="cold">Cold Coffee</button>
+        <button class="filter-btn" data-filter="signature">Signature</button>
+        <button class="filter-btn" data-filter="manual">Manual Brew</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+
+        <div class="menu-card reveal-up" data-category="hot">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&q=80" alt="Espresso" loading="lazy" />
+            <div class="menu-tag">Hot</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(48)</span>
+            </div>
+            <h3>Espresso</h3>
+            <p>Shot kopi pekat dari biji Arabica Gayo, intense dan berkarakter</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 18.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Espresso" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal-up" data-category="hot">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80" alt="Cappuccino" loading="lazy" />
+            <div class="menu-tag">Hot</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(62)</span>
+            </div>
+            <h3>Cappuccino</h3>
+            <p>Espresso Gayo, steamed milk, dan foam lembut dengan latte art premium</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 25.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Cappuccino" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal-up" data-category="hot">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&q=80" alt="Latte" loading="lazy" />
+            <div class="menu-tag">Hot</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(74)</span>
+            </div>
+            <h3>Caffe Latte</h3>
+            <p>Kelembutan susu bertemu aroma khas Arabica Gayo yang menawan</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 27.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Caffe%20Latte" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal-up" data-category="hot">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80" alt="Americano" loading="lazy" />
+            <div class="menu-tag">Hot</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span>(39)</span>
+            </div>
+            <h3>Americano</h3>
+            <p>Espresso Gayo diencerkan dengan air panas, rasa bersih dan jernih</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 22.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Americano" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal-up" data-category="signature">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Gayo Signature" loading="lazy" />
+            <div class="menu-tag signature">Signature</div>
+            <div class="menu-best-seller">Best Seller</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(98)</span>
+            </div>
+            <h3>Gayo Signature Coffee</h3>
+            <p>Racikan eksklusif KHANZA COFFEE—perpaduan sempurna rasa buah, cokelat, dan floral khas Gayo</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 35.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Gayo%20Signature%20Coffee" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal-up" data-category="manual">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" alt="Manual Brew" loading="lazy" />
+            <div class="menu-tag manual">Manual</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(55)</span>
+            </div>
+            <h3>Manual Brew</h3>
+            <p>Pour over, V60, atau Chemex—dituang perlahan untuk memaksimalkan ekspresi rasa Gayo</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 32.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Manual%20Brew" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal-up" data-category="cold">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Es Kopi Susu" loading="lazy" />
+            <div class="menu-tag cold">Cold</div>
+            <div class="menu-best-seller">Favorit</div>
+            <div class="menu-overlay">
+              <button class="menu-add-btn" onclick="addToCartAnim(this)">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(112)</span>
+            </div>
+            <h3>Es Kopi Susu</h3>
+            <p>Dingin menyegarkan—espresso Gayo, susu segar, dan gula aren pilihan</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 28.000</span>
+              <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee,%20saya%20ingin%20order%20Es%20Kopi%20Susu" target="_blank" class="menu-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end menu-grid -->
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us section-padding" id="why-us">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Keunggulan Kami</span>
+        <h2 class="section-title">Mengapa <em>KHANZA COFFEE?</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal-up" data-delay="0">
+          <div class="why-icon"><i class="fas fa-mountain"></i></div>
+          <h3>Langsung dari Dataran Gayo</h3>
+          <p>Biji kopi kami dipetik langsung dari perkebunan di ketinggian 1.200–1.700 mdpl, jaminan kualitas terbaik.</p>
+        </div>
+        <div class="why-card reveal-up" data-delay="100">
+          <div class="why-icon"><i class="fas fa-award"></i></div>
+          <h3>Kualitas Tidak Kompromi</h3>
+          <p>100% Arabica Gayo tanpa campuran robusta. Setiap batch diseleksi ketat sebelum sampai ke tanganmu.</p>
+        </div>
+        <div class="why-card reveal-up" data-delay="200">
+          <div class="why-icon"><i class="fas fa-home"></i></div>
+          <h3>Suasana Rumahan Premium</h3>
+          <p>Coffee shop dengan nuansa hangat, cozy, dan elegan—cocok untuk kerja, nongkrong, atau sekadar me-time.</p>
+        </div>
+        <div class="why-card reveal-up" data-delay="300">
+          <div class="why-icon"><i class="fas fa-handshake"></i></div>
+          <h3>Mendukung Petani Lokal</h3>
+          <p>Setiap pembelian berkontribusi langsung pada kesejahteraan petani kopi Gayo dan keberlanjutan ekosistem.</p>
+        </div>
+        <div class="why-card reveal-up" data-delay="400">
+          <div class="why-icon"><i class="fas fa-coffee"></i></div>
+          <h3>Barista Berpengalaman</h3>
+          <p>Tim barista kami memahami karakteristik unik kopi Gayo dan menyajikannya dengan teknik profesional.</p>
+        </div>
+        <div class="why-card reveal-up" data-delay="500">
+          <div class="why-icon"><i class="fas fa-star"></i></div>
+          <h3>Rating 5.0 di Google</h3>
+          <p>Kepercayaan pelanggan adalah bukti nyata. Kami bangga dengan ulasan bintang 5 dari setiap pelanggan setia kami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Visual Story</span>
+        <h2 class="section-title">Gallery <em>KHANZA COFFEE</em></h2>
+        <p class="section-sub">Sekilas kehangatan dan keindahan dari setiap sudut KHANZA COFFEE</p>
+      </div>
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="gallery-item tall reveal-up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Coffee Pour" loading="lazy" />
+          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal-up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80" alt="Coffee Beans" loading="lazy" />
+          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item wide reveal-up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80" alt="Coffee Roast" loading="lazy" />
+          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal-up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Latte Art" loading="lazy" />
+          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item tall reveal-up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&q=80" alt="Coffee Shop Interior" loading="lazy" />
+          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal-up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Iced Coffee" loading="lazy" />
+          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+      <button class="lightbox-prev" onclick="prevLightbox()"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next" onclick="nextLightbox()"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Suara Pelanggan</span>
+        <h2 class="section-title">Yang Mereka <em>Katakan</em></h2>
+      </div>
+      <div class="testi-slider-wrap">
+        <div class="testi-slider" id="testiSlider">
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Kopi terbaik yang pernah aku coba di Medan! Arabica Gayo-nya beneran berasa berbeda—ada note cokelat dan floral yang khas. Langsung jadi pelanggan setia!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">AR</div>
+              <div class="testi-info">
+                <strong>Aldi Ramadhan</strong>
+                <span>Coffee Enthusiast, Medan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Suasananya hangat banget, cocok buat kerja atau sekadar santai. Es Kopi Susunya juara, gula arennya pas manis. Bakalan balik lagi terus!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SR</div>
+              <div class="testi-info">
+                <strong>Sari Ramadhani</strong>
+                <span>Content Creator, Medan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Manual brew-nya luar biasa! Barista-nya sangat paham karakter kopi Gayo dan menyajikannya dengan penuh perhatian. Harga sangat worth it untuk kualitas segini."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">FH</div>
+              <div class="testi-info">
+                <strong>Fadhil Harahap</strong>
+                <span>Coffee Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Gayo Signature Coffee-nya jadi minuman wajib tiap kali ke sini. Blend yang dibuat khusus ini beneran unik dan nggak bisa ditemukan di tempat lain. Recommended banget!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">NN</div>
+              <div class="testi-info">
+                <strong>Nadia Nasution</strong>
+                <span>Pelanggan Setia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Cappuccino-nya tekstur foam-nya sempurna, rasa espresso Gayo-nya powerful tapi tetap smooth. Tempatnya juga instagrammable banget. 10/10!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">MP</div>
+              <div class="testi-info">
+                <strong>Muhammad Prasetyo</strong>
+                <span>Fotografer, Medan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Pelayanannya ramah dan cepat. Kopi yang disajikan konsisten kualitasnya setiap kunjungan. KHANZA COFFEE beneran serius soal kualitas kopi Gayo. Bangga ada tempat kayak gini di Medan!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">RW</div>
+              <div class="testi-info">
+                <strong>Rizky Wirawan</strong>
+                <span>Mahasiswa, Medan</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn prev" id="testiPrev"><i class="fas fa-arrow-left"></i></button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn next" id="testiNext"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section class="location section-padding" id="location">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Temukan Kami</span>
+        <h2 class="section-title">Lokasi <em>KHANZA COFFEE</em></h2>
+      </div>
+      <div class="location-grid">
+        <div class="location-info reveal-left">
+          <div class="loc-card">
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Alamat</h4>
+                <p>Jl. Utama No.5, Kotamatsum III,<br/>Kec. Medan Kota, Kota Medan,<br/>Sumatera Utara 20215</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Jam Operasional</h4>
+                <p>Setiap Hari<br/><span class="open-badge">🟢 Buka</span> — Tutup pukul 00.00</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Kontak</h4>
+                <a href="tel:082280864395">0822-8086-4395</a>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fas fa-star"></i></div>
+              <div>
+                <h4>Rating Google</h4>
+                <p><span class="gold-text">⭐ 5.0</span> — 6 Ulasan</p>
+              </div>
+            </div>
+            <div class="loc-services">
+              <span class="service-tag"><i class="fas fa-utensils"></i> Makan di Tempat</span>
+              <span class="service-tag"><i class="fas fa-car"></i> Ambil di Jalan</span>
+              <span class="service-tag"><i class="fas fa-motorcycle"></i> Antar ke Rumah</span>
+            </div>
+            <a href="https://maps.google.com?q=Jl.+Utama+No.5,+Kotamatsum+III,+Kec.+Medan+Kota,+Kota+Medan,+Sumatera+Utara+20215" target="_blank" class="btn-primary open-maps-btn">
+              <i class="fas fa-map"></i> Open Google Maps
+            </a>
+          </div>
+        </div>
+        <div class="location-map reveal-right">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Jl.+Utama+No.5,+Kotamatsum+III,+Kec.+Medan+Kota,+Kota+Medan,+Sumatera+Utara+20215&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Khanza Coffee"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq section-padding" id="faq">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-title">Pertanyaan <em>Umum</em></h2>
+      </div>
+      <div class="faq-list reveal-up">
+        <div class="faq-item">
+          <button class="faq-question">
+            Apa yang membuat kopi Arabica Gayo berbeda?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Kopi Arabica Gayo ditanam di dataran tinggi Aceh pada ketinggian 1.200–1.700 mdpl. Kondisi tanah vulkanik, iklim sejuk, dan teknik pengolahan traditional menghasilkan profil rasa unik—note cokelat, buah-buahan tropis, dan floral yang khas. Gayo adalah salah satu kopi specialty terbaik di dunia.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah bisa order untuk delivery?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Tentu! Kami melayani pengiriman tanpa kontak (contactless delivery) dan ambil di tepi jalan (curbside pickup). Hubungi kami via WhatsApp di 0822-8086-4395 untuk pemesanan dan informasi area delivery.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah tersedia pembelian biji kopi (beans)?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Ya! Kami juga menjual biji kopi Arabica Gayo whole bean dan ground untuk kamu yang ingin menikmati KHANZA COFFEE di rumah. Hubungi kami untuk ketersediaan dan harga.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apa jam operasional KHANZA COFFEE?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Kami buka setiap hari dan tutup pada pukul 00.00 WIB. Kamu bisa menikmati kopi premium kami dari pagi hingga tengah malam!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah ada promo atau membership?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Kami secara berkala mengadakan promo spesial dan program loyalty untuk pelanggan setia. Follow media sosial kami dan hubungi WhatsApp untuk informasi promo terkini.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Hubungi Kami</span>
+        <h2 class="section-title">Kirim <em>Pesan</em></h2>
+        <p class="section-sub">Ada pertanyaan, saran, atau ingin reservasi? Kami siap mendengarmu.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap reveal-left">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="cName">Nama Lengkap</label>
+              <input type="text" id="cName" name="name" placeholder="Masukkan nama kamu..." required />
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" name="email" placeholder="email@kamu.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cMsg">Pesan</label>
+              <textarea id="cMsg" name="message" rows="5" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span class="btn-text">Kirim Pesan</span>
+              <span class="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i></span>
+              <i class="fas fa-paper-plane btn-icon"></i>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none">
+              <i class="fas fa-check-circle"></i> Pesan terkirim! Kami akan segera menghubungimu.
+            </div>
+          </form>
+        </div>
+        <div class="contact-info reveal-right">
+          <div class="contact-info-card">
+            <h3>Hubungi Langsung</h3>
+            <div class="contact-method">
+              <a href="https://wa.me/6282280864395" target="_blank" class="contact-link whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp: 0822-8086-4395</span>
+              </a>
+            </div>
+            <div class="contact-method">
+              <a href="mailto:muhammadrifafarezi@gmail.com" class="contact-link email">
+                <i class="fas fa-envelope"></i>
+                <span>muhammadrifafarezi@gmail.com</span>
+              </a>
+            </div>
+            <div class="contact-method">
+              <a href="tel:082280864395" class="contact-link phone">
+                <i class="fas fa-phone"></i>
+                <span>0822-8086-4395</span>
+              </a>
+            </div>
+            <div class="contact-socials">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/6282280864395" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+              <span class="logo-k">K</span>HANZA <span class="logo-accent">COFFEE</span>
+            </a>
+            <p class="footer-tagline">Kopi Arabica Gayo 100%<br/>Dengan Cita Rasa Premium</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="https://wa.me/6282280864395" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Navigasi</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Menu Pilihan</h4>
+            <ul>
+              <li><a href="#menu">Espresso</a></li>
+              <li><a href="#menu">Cappuccino</a></li>
+              <li><a href="#menu">Caffe Latte</a></li>
+              <li><a href="#menu">Gayo Signature</a></li>
+              <li><a href="#menu">Manual Brew</a></li>
+              <li><a href="#menu">Es Kopi Susu</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Utama No.5, Kotamatsum III, Medan Kota, Sumatera Utara</p>
+            <p><i class="fas fa-phone"></i> 0822-8086-4395</p>
+            <p><i class="fas fa-clock"></i> Buka s/d 00.00 WIB</p>
+            <p><i class="fas fa-star"></i> Rating: 5.0 ⭐ Google</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footerYear"></span> KHANZA COFFEE. All rights reserved. Made with <i class="fas fa-heart" style="color:#C9A96E"></i> in Medan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Floating Button ===== -->
+  <a href="https://wa.me/6282280864395?text=Halo%20Khanza%20Coffee!%20Saya%20ingin%20order..." target="_blank" class="whatsapp-float" aria-label="Chat WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat Order</span>
+  </a>
+
+  <!-- Cart notification -->
+  <div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i> Ditambahkan ke pesanan!
+  </div>
+
+  <!-- Background Music (optional) -->
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
